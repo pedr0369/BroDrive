@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Equação de segundo grau</title>
+
+<link rel="stylesheet" media="all" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+
+<style type="text/css">
+    input {
+        margin-left: 20px;   
+    }
+    
+    .input-group-addon {
+        padding: 0 10px;
+        z-index: 1000;
+        position: relative;
+    }
+    
+    button {
+        margin-left: 10px;   
+    }
+    
+</style>
+    
+<script type="text/javascript">
+    
+function formulario(){
+    
+    var eq = {
+        "a": a.value,
+        "b": b.value,
+        "c": c.value,
+        "op1": op1.value,
+        "op2": op2.value,
+    }
+	
+	if(isNaN(eq.a) || isNaN(eq.b) || isNaN(eq.c)){
+		alert('Coloque apenas numeros nos campos da equação');
+		return false;
+	}
+	
+	if(eq.a == "" || eq.b == "" || eq.c == "" || eq.op1 == "" || eq.op2 == ""){
+		alert('Não deixe os campos vazios');
+		return false;
+	}
+	
+	if((eq.op1 != '+') && (eq.op1 != '-') && (eq.op1 != '*') && (eq.op1 != '/')){
+		alert('Coloque algum operador básico');
+		form.op1.focus();
+		return false;
+	}
+	
+	if((eq.op2 != '+') && (eq.op2 != '-') && (eq.op2 != '*') && (eq.op2 != '/')){
+		alert('Coloque algum operador básico');
+		form.op2.focus();
+		return false;
+	}
+	
+	if(eq.op1 == "-"){
+	   eq.b = -eq.b;
+	}
+	if(eq.op2 == "-"){
+	   eq.c = -eq.c;
+	}
+	
+	confirm("a: " + eq.a + " b: " + eq.b + " c: " + eq.c);
+	eq.equacao = eq.a + "x² " + eq.op1 + eq.b + "x " +  eq.c + " = 0";
+    
+    eq.delta = (eq.b * eq.b) -4 * eq.a * eq.c;		
+	eq.x1 = (-(eq.b) + (Math.sqrt(eq.delta))) / (2 * eq.a);		
+	eq.x2 = (-(eq.b) - (Math.sqrt(eq.delta))) / (2 * eq.a);		
+
+	document.getElementById('delta').innerHTML = "<b>" + eq.delta + "</b>";
+	document.getElementById('x1').innerHTML = "<b>" + eq.x1 + "</b>";
+	document.getElementById('x2').innerHTML = "<b>" + eq.x2 + "</b>";
+	document.getElementById('equacao').innerHTML = "<b>" + eq.equacao + "</b>";
+    
+}    
+</script>
+
+    
+</head>
+
+<body>
+    
+<div class="container">
+    <div class="col-md-8 col-sm-10 col-sm-offset-1 col-md-offset-2">
+<h3 class="text-center">Equação do segundo grau</h3>
+    
+    <div class="input-group col-sm-2 pull-left">    
+	   <input type="number" maxlength="3" name="a" id ="a" class="form-control">
+        <span class="input-group-addon">x²</span>
+    </div>
+        
+    <div class="input-group col-sm-2 pull-left">   
+        <input type="text" maxlenght="1" name="op1" id="op1" class="form-control"> 
+        <span class="input-group-addon">op</span>
+    </div>
+        
+    <div class="input-group col-sm-2 pull-left">  
+        <input type="number" maxlength="3" id="b" name="b" class="form-control">
+        <span class="input-group-addon">x</span>
+    </div>
+        
+    <div class="input-group col-sm-2 pull-left"> 
+        <input type="text" maxlenght="1" id="op2" name="op2" class="form-control">
+        <span class="input-group-addon">op</span>
+    </div>
+        
+    <div class="input-group col-sm-2 pull-left">         
+        <input type="number" maxlength="3" id="c" name="c" class="form-control">
+        <span class="input-group-addon"> = 0</span>
+    </div>
+        
+    <div class="input-group col-sm-2 pull-left"> 
+        <button onclick="formulario()" class=" btn btn-primary btn ">Enviar</button>
+    </div>
+
+    </div>
+    
+    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <h3 class="text-center">Resultados: </h3>
+        <p class="alert alert-info">Equação: <span id="equacao"></span></p>
+        <p class="alert alert-warning col-sm-4">Delta é: <span id="delta"></span></p>
+        <p class="alert alert-success col-sm-3 col-sm-offset-1">X¹ é: <span id="x1"></span></p>
+        <p class="alert alert-success col-sm-3 col-sm-offset-1">X² é: <span id="x2"></span></p>
+    </div>
+    
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+body { background-color: #333333; padding: 0; margin: 0; }
+
+#canvas { background-color: rgb(0,15,1); display:none; margin:0; padding: 0; }
+
+#menu img { width: 100%; }
+
+@media screen and (min-width: 750px) {
+  
+  #menu { width: 40%; margin-left:30%; height:300px; margin-top: 50px; }
+  
+  #play, #play1 { font-size:200%; text-align: center; background:white; cursor:pointer; width:100%; border: 1px solid #c0c0c0; }
+   
+  #play:hover, #play1:hover { border: 1px solid black; }
+  
+  #opc { font-size:200%; background:white; cursor:pointer; width:30%; margin-left: 35%; border: 1px solid #c0c0c0; }
+   
+}
+
+@media screen and (max-width: 750px) {
+
+  #menu { width: 40%; margin-left:30%; height:300px; margin-top: 5px; }
+
+  #play, #play1 { font-size:160%; text-align: center; background:white; cursor:pointer; border: 1px solid #c0c0c0; margin:1%; }
+   
+  #play:hover, #play1:hover { border: 1px solid black; } 
+  
+  #opc { background:white; cursor:pointer; width:60%; margin-left: 20%; border: 1px solid #c0c0c0; }
+   
+}
+
+#opc img { width: 60%; height: 60px; margin-left: 20%;  margin-top:5px; }
