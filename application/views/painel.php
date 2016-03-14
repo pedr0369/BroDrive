@@ -14,7 +14,8 @@
     $path = 'Diretorio/pedr0369';
     $lista = dir($path);
     while($arquivo = $lista -> read()){ 
-        echo "<a href='".$path.$arquivo."'>".$arquivo."</a><br />"; 
+        echo "<a href='".$path.$arquivo."'>".$arquivo."</a><br />";
+		echo "my name is";
     }
 ?>
 
