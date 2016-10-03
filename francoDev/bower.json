@@ -1,0 +1,24 @@
+{
+  "name": "francoDevCI",
+  "authors": [
+    "pedr369 <pedr0369@hotmail.com>"
+  ],
+  "description": "Site FrancoDev CI feito em Code Igniter",
+  "main": "index.php",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "font-awesome": "^4.6.3"
+  }
+}

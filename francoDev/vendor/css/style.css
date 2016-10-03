@@ -1,0 +1,151 @@
+html { overflow-y: scroll; }
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #F8F8F8;
+}
+
+* { font-family: arial; }
+
+.font_google { font-family: offside; }
+
+a {
+    color: #324B59;
+    font-weight: 600;
+}
+
+#lista-contatos { margin-bottom: 30px; }
+
+form button { margin-top: 25px; }
+
+form .form-group:first-child { padding-left: 0; }
+
+/* nav */
+.navbar { background: #ffffff; box-shadow: 1px 1px 4px black; }
+
+nav {
+    position: fixed;
+}
+
+.navbar-brand {
+    font-family: offside;
+    font-size: 30px;
+}
+
+/* aside */
+aside {
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.autor-img {
+    padding: 20px;
+    height: 250px;
+    width:100%;
+    margin-left: calc(50% - 50%);
+}
+
+.autor-description p, .autor-description h3{
+    font-family: offside;
+    text-align: center;
+}
+
+.autor-img img {
+    width: 100%;
+    border-radius: 150px;
+    height: 100%;
+}
+
+/* content */
+.content {
+    background:#ffffff;
+    padding: 20px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.chamadaPost {
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 8px solid #00C39A;
+    width: calc(50% - 20px);
+    margin: 10px;
+    height: 435px;
+}
+
+.chamadaPost h3 {
+    margin: 5px;
+    font-family: offside;
+}
+
+.chamadaPost img {
+    padding: 5  px;
+    border: 3px solid white;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+
+.chamadaPost p {
+    padding: 2px 5px;
+    text-align: justify;
+}
+
+/* rodape codigo */
+footer {
+    border-bottom: 10px solid #00C39A;
+    background: #333333;
+    padding: 20px;
+    color: white;
+}
+
+/* pagina contato */
+.botao_envia {
+    background-color: #00C39A;
+    color: white;
+    font-weight: 700;
+    border-bottom: 8px solid #333;
+    font-size: 18px;
+}
+
+/* pagina portfolio */
+.ladoS {
+    background: #333;
+    color: #ffffff;
+    border-bottom: 8px solid #00C39A;
+}
+
+.ladoN {
+    background: white;
+    box-shadow: 1px 1px 4px #333;
+    color: #333333;
+    border-bottom: 8px solid #333;
+}
+
+.ladoN h2, .ladoS h2, .ladoS h4 {
+    font-family: offside;
+    padding-bottom: 15px;
+    color: #00C39A;
+}
+
+.ladoS p, .ladoN p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+.ladoS a{ color: #00C39A; }
+
+.sites_Projects {
+    border-bottom: 10px solid #00c39a;
+    box-shadow: 1px 1px 4px #333;
+    width: calc(50% - 20px);
+    margin: 10px;
+    font-family: offside;
+}
+
+#botao_mais {
+    background: #00c39a;
+    color: #333;
+    border-bottom: 7px solid #333;
+    top: 20px;
+    position: relative;
+}

@@ -1,0 +1,142 @@
+body{ background-color: #f0f0f0; }
+
+.btn {
+    color: white;
+    background-color: #78909C;
+    border-bottom: 3px solid #607D8B;
+}
+
+.avatar {
+	width: 23%;
+	float: left;
+	padding: 1%;
+	margin: 3px;
+	border: 1px solid white;
+	border-radius: 5px;
+    background: rgba(0,0,0,0.3);
+}
+
+.bg-primary {
+    background-color: #455A64;
+}
+
+.avatar img { float:right; }
+
+.menu_solto {
+   position: relative;
+   top:15px;
+}
+
+.logo {
+    height: 75px;
+}
+
+@media (max-width: 800px){
+    .nav .navbar-brand img {
+        height: 40px;
+    }
+}
+
+.nav .navbar-brand img {
+    margin: -10px 10px 0;
+    height: 75px;
+}
+
+.nav {
+    background-color: #607D8B !important;
+    padding: 0 5px;
+}
+
+.navbar-default .navbar-nav>li>a {
+   color: white;
+   font-size: 16px;
+}
+
+.usuarioMenu {
+   font-family: 'Bangers' !important;
+   font-size: 22px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+   background-color: #f0f0f0;
+   color: #4d5a67;
+} 
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a { color: black; }
+
+#div-file { position: relative; }
+
+#div-file div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#div-file input[type="file"]{
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    width: 0;
+    position: relative;
+    left: -3px;
+    z-index: 2;
+    cursor: pointer;
+    width: 100%;
+    height: 35px;
+}
+
+#file-falso { display: block; }
+
+.boxAside {
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(51,122,183, 0.6);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+    padding: 10px 5px;
+    width: calc(100% - 10px);
+    text-align: center;
+}
+
+.cat_boxAside {
+    float: left;
+    margin: 3px 2px;
+    padding: 5px;
+    width: calc(33% - 5px);
+}
+
+.text_boxAside { font-size: 22px; }
+
+.label-default {
+    background: rgba(0,0,0,0.4);
+    font-family: verdana;
+}
+
+.label-default a { color: white; }
+
+.myPanel { margin-top:-25px; margin-left: -15px; }
+
+.bg_bro {
+    padding-bottom: 5px;
+    background: white;
+    padding-top: 0;
+    padding: 5px;
+    border-top: none;
+    border-radius: 5px;
+    border-bottom: 3px solid rgba(0,0,0, 0.5);
+    margin-top: 10px;
+}
+
+.tit_box {
+    padding: 7px;
+    background-color: #455A64;
+    border-bottom: 3px solid #37474F;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;    
+}
+
+.transparencia { background-color: rgba(0,0,0,0.4); }
+
+.text_file { font-size: 12px; }
